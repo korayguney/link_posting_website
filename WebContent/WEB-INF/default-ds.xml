@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources xmlns="http://www.jboss.org/ironjacamar/schema"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
+ <datasource jndi-name="java:jboss/datasources/contactsconn" enabled="true" 
+     use-java-context="true" pool-name="contacts_pool">
+  <connection-url>jdbc:mysql://localhost:3306/mylinksdb</connection-url>
+  
+  <driver>mysql</driver>
+  <pool>
+  	<min-pool-size>10</min-pool-size>
+  	<max-pool-size>20</max-pool-size>
+  </pool>
+  <security>
+   <user-name>root</user-name>
+   <password>1234</password>
+  </security>
+ </datasource> 
+</datasources>
